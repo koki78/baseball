@@ -1,0 +1,30 @@
+<% provide(:title, "category") %>
+ <div class="center hero-unit">
+  <h1>どれでつぶやく？</h1>  
+
+<!--   <h2>
+    This is the home page for the
+    <a href="http://railstutorial.jp/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2> -->
+
+  <h2>
+
+
+  </h2>  
+  
+
+  <!-- <a href="#" class="button button-circle button-flat-highlight">リアったー</a> -->
+  <%= link_to "リアったー", {action: :ria},  class: "button button-circle button-flat-highlight" %>
+  <%= link_to "病みったー", {action: :yami}, class: "button button-circle button-flat-primary" %>
+  <br>
+  <%= link_to "悟ったー", {action: :sato}, class: "button button-circle button-flat-royal" %>
+  <%= link_to "発信ったー", {action: :maji}, class: "button button-circle button-flat-action" %>
+
+<!--   <a href="#" class="button button-circle button-flat-primary">病みったー</a>
+  <br>
+  <a href="#" class="button button-circle button-flat-royal">悟ったー</a>
+  <a href="#" class="button button-circle button-flat-action">まじめったー</a> -->
+</div>
+
+<!-- <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %> -->
