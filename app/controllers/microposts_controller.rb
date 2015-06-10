@@ -3,25 +3,57 @@ class MicropostsController < ApplicationController
   before_action :correct_user,  only: :destroy
 
   def create
-  	@micropost = current_user.microposts.build(micropost_params)
+    @micropost = current_user.microposts.build(micropost_params)
+
+    logger.debug "-------------------------------------------------------------"
+    logger.debug @micropost
+    logger.debug("******")
+    logger.debug(params[:micropost][:category])
+    logger.debug("******")
+    logger.debug @micropost.id
+    logger.debug @micropost.content
+    logger.debug @micropost.category
+    logger.debug "-------------------------------------------------------------"
+    
     if @micropost.save
       flash[:success] = "Micropost created!"
-      redirect_to root_url
+      @title = params[:micropost][:category]
+      redirect_to root_path :flash => {:title => "#{@title}"}
+      
+
+      # if {action: :ria} @maru ="ria" 
     else
-    　@feed_items = []
+      @feed_items = []
       render 'static_pages/home'
     end
   end
 
   def destroy
-  	@micropost.destroy
-    redirect_to root_url
+    logger.debug "-------------------------------------------------------------"
+    logger.debug @micropost
+    logger.debug("******")
+    logger.debug(params[:cat_name])
+    logger.debug("******")
+    logger.debug @micropost.id
+    logger.debug @micropost.content
+    logger.debug @micropost.category
+    logger.debug "-------------------------------------------------------------"
+    
+    @title = @micropost.category
+    @micropost.destroy
+
+
+
+
+    redirect_to root_path :flash => {:title => "#{@title}"}
+    
+      # redirect_to root_path :notice => {:title => "#{@title}"}
   end
 
   private
 
     def micropost_params
-      params.require(:micropost).permit(:content)
+      params.require(:micropost).permit(:content,:category)
     end
 
     def correct_user

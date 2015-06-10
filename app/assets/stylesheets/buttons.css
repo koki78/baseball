@@ -1271,3 +1271,10 @@ input.button-tiny, button.button-tiny {
       .button-dropdown ul a:hover, .button-dropdown ul a:focus {
         background-color: #3c6ab9;
         color: #FFF; }
+
+    .bg {
+  background:url(koki.iwata/ria.jpg) no-repeat;
+    }
+
+ 
+

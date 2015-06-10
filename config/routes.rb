@@ -15,14 +15,12 @@ Baseball::Application.routes.draw do
   match '/help',    to: 'static_pages#help',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
+  
   match '/category', to: 'static_pages#marumaru', via: 'get'
   match '/ria',  to: 'static_pages#ria',            via: 'get'
   match '/yami',  to: 'static_pages#yami',            via: 'get'
   match '/sato',  to: 'static_pages#sato',            via: 'get'
   match '/maji',  to: 'static_pages#maji',            via: 'get'
-  # match '/ria',  to: 'sessions#new',         via: 'get'
-  # match '/ria', to: 'sessions#destroy',     via: 'get'
-  # match '/ria',    to: 'static_pages#help',    via: 'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,20 +1,28 @@
 class StaticPagesController < ApplicationController
   def home
+    @title = "◯◯"
   	if signed_in?
       @title =params[:flash][:title] unless params[:flash].nil?
       @micropost  = current_user.microposts.build
-      @feed_items = current_user.feed.paginate(page: params[:page])
-	end
-   end
+      @feed_items = current_user.feed.where(category: @title).paginate(page: params[:page])
+	 end
+  end
 
   def help
+    @title = "◯◯"
   end
 
   def about
+    @title = "◯◯"
   end
 
   def contact
+    @title = "◯◯"
   end
+
+  # def index
+  #   @title = "◯◯"
+  # end
 
   def marumaru
     @title = "◯◯"

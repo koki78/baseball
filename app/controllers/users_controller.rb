@@ -4,18 +4,22 @@ class UsersController < ApplicationController
   
   def index
     @users = User.paginate(page: params[:page])
+    @title = "◯◯"
   end
 
   def show
     @user = User.find(params[:id])
     @microposts = @user.microposts.paginate(page: params[:page])
+    @title = "◯◯"
   end
 
   def new
   	@user = User.new
+    @title = "◯◯"
   end
 
   def edit
+    @title = "◯◯"
   end
 
   def update
@@ -32,7 +36,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       sign_in @user
-      flash[:success] = "Welcome to the Sample App!"
+      flash[:success] = "◯◯ったーへようこそ!"
       # redirect_to @user
       redirect_to category_path
     else
@@ -43,18 +47,18 @@ class UsersController < ApplicationController
   def destroy
     User.find(params[:id]).destroy
     flash[:success] = "User destroyed."
-    redirect_to users_url
+    redirect_to root_path
   end
 
   def following
-    @title = "Following"
+    @title = "◯◯"
     @user = User.find(params[:id])
     @users = @user.followed_users.paginate(page: params[:page])
     render 'show_follow'
   end
 
   def followers
-    @title = "Followers"
+    @title = "◯◯"
     @user = User.find(params[:id])
     @users = @user.followers.paginate(page: params[:page])
     render 'show_follow'
