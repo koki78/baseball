@@ -34,7 +34,7 @@ padding: 0;
   }
 
   a.button-flat-royal{
-    background: image-path("sato.misawa.jpeg") center #999;
+    background: image-url("sato.misawa.jpeg") center #999;
     background-size: 65%;
     background-repeat: no-repeat;
     -webkit-background-clip: border-box;
@@ -42,15 +42,15 @@ padding: 0;
   }
 
   a.button-flat-highlight{
-    background-image: url("public/ikari.jpeg");
-        background-size: cover;
-
+    background: image-url("public/ikari.jpeg")center;
+    background-size: cover;
+    -webkit-background-clip: border-box;
     color: transparent;
   }
   a.button-flat-primary{
-    background: url("assets/ikari-6bcaf226b239865cff7b2d9018259fb6.jpeg") center;
-        background-size: cover;
-
+    background: imagae-url("assets/ikari-6bcaf226b239865cff7b2d9018259fb6.jpeg") center;
+    background-size: cover;
+    -webkit-background-clip: border-box;
     color: transparent;
   }
 
