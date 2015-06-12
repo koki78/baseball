@@ -17,8 +17,13 @@
 
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
+      　　   <%= f.label :image %>
+　　   <%= f.file_field :image %>  
 
       <%= f.submit "アカウントを作成", class: "btn btn-large btn-primary" %>
-    <% end %>
+
+ 
+      <% end %>
+　    
   </div>
 </div>

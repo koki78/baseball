@@ -20,18 +20,48 @@ body {
   padding-top: 60px;
   background-color: #ffffff
 }
+.hero-unit{
+background-color: white;
+padding: 0;
+  .button-circle{
+    margin: 0 15px;
+    line-height: 220px;
+    &:hover {
+    color: white;
+    text-decoration: none;
+  }
 
-.center hero-unit{
-  background-color: #ffffff
+  }
+
+  a.button-flat-royal{
+    background: image-url("sato.misawa.jpeg") center #999;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: border-box;
+    color: transparent;
+  }
+
+  a.button-flat-highlight{
+    background: image-url("b-misawa.png") center;
+        background-size: cover;
+    -webkit-background-clip: border-box;
+    color: transparent;
+  }
+  a.button-flat-primary{
+    background: image-url("ikari.jpeg") center;
+        background-size: cover;
+    -webkit-background-clip: border-box;
+    color: transparent;
+  }
+
+  a.button-flat-action{
+    background: image-url("b-misawa.png") center;
+        background-size: cover;
+    -webkit-background-clip: border-box;
+    color: transparent;
+  }
 }
 
-.bg {
-  background:url(koki.iwata/ria.jpg) no-repeat;
-    }
-
-.center hero-unit{
-color: white
-}
 
 section {
   overflow: auto;
@@ -46,7 +76,9 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+
 }
+
 
 /* typography */
 
@@ -82,7 +114,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: $grayLight;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;

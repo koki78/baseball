@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+
+  mount_uploader :image, ImageUploader
   has_many :microposts, dependent: :destroy
   has_many :relationships, foreign_key: "follower_id", dependent: :destroy
   has_many :followed_users, through: :relationships, source: :followed
@@ -8,6 +10,9 @@ class User < ActiveRecord::Base
                                    class_name:  "Relationship",
                                    dependent:   :destroy
   has_many :followers, through: :reverse_relationships, source: :follower
+
+  
+  # 画像の処理　userテーブルに追加したカラムの名前をmount_uploaderに指定する。
 
 
 

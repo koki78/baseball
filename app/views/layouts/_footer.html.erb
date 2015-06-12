@@ -1,7 +1,8 @@
 <footer class="footer">
   <small>
-    <a href=""><%= yield(:title) %>ったー</a>
-    by Koki Iwata
+    <!-- <a href=""><%= yield(:title) %>ったー</a> -->
+    <%= link_to "#{@title}ったー", category_path, id: "logo" %>
+    by Koki Iwata feat.地獄のミサワ
   </small>
   <nav>
     <ul>

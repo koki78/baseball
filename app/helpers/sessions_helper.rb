@@ -50,4 +50,8 @@ module SessionsHelper
     session[:return_to] = request.url
   end
 
+  def webconsole
+    console unless Rails.env == 'production'
+  end
+
 end

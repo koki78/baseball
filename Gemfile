@@ -11,7 +11,7 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'web-console'
 gem 'carrierwave'
-# gem 'rmagick' require => "Rmagic"
+gem 'rmagick', :require => 'RMagick'
 
 
 group :development, :test do

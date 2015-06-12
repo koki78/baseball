@@ -33,7 +33,7 @@ class StaticPagesController < ApplicationController
   end
 
   def yami
-    redirect_to root_path :flash => {:title => "病み"}
+    redirect_to root_path :flash => {:title => "愚痴"}
   end
 
   def sato
