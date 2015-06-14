@@ -27,37 +27,55 @@ padding: 0;
     margin: 0 15px;
     line-height: 220px;
     &:hover {
-    color: white;
-    text-decoration: none;
-  }
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+    font-style: sans-serif, "ＭＳ Ｐゴシック"　,self;
+    // text-decoration: none;
 
   }
 
-  a.button-flat-royal{
-    background: image-url("sato.misawa.jpeg") center #999;
+  }
+
+  a.button-flat-highlight{
+    background: image-url("natsu.jpeg")center;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: border-box;
+    &:hover {
+      color: coral;
+    }
+    color: transparent;
+  }
+
+  a.button-flat-primary{
+    background: image-url("dogeza.jpeg") center;
     background-size: 65%;
     background-repeat: no-repeat;
     -webkit-background-clip: border-box;
     color: transparent;
   }
 
-  a.button-flat-highlight{
-    background: image-url("public/ikari.jpeg")center;
-    background-size: cover;
+  a.button-flat-royal{
+    background: image-url("sato.misawa.jpeg") center ;
+    background-size: 65%;
+    background-repeat: no-repeat;
     -webkit-background-clip: border-box;
+    &:hover {
+      color: seagreen;
+    }
     color: transparent;
-  }
-  a.button-flat-primary{
-    background: imagae-url("assets/ikari-6bcaf226b239865cff7b2d9018259fb6.jpeg") center;
-    background-size: cover;
-    -webkit-background-clip: border-box;
-    color: transparent;
+ 
   }
 
   a.button-flat-action{
-    background: image-url("b-misawa.png") center;
-        background-size: cover;
+    background: image-url("reisei.jpeg") center;
+        background-size: 65%;
+        background-repeat: no-repeat;
     -webkit-background-clip: border-box;
+    &:hover {
+      color: royalblue;
+    }
     color: transparent;
   }
 }
