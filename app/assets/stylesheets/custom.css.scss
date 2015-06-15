@@ -22,12 +22,27 @@ body {
   background-color: #ffffff
   
 }
+
+.big-height{
+    height:500px;
+   h1{
+    margin-top:150px;
+   }
+}
+
 .hero-unit{
   background:image-url("haikei.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
-  padding: 0;
+
+
+  // h1{
+  //   margin-top:130px;
+  // }
+  
+
+
   .button-circle{
     margin: 0 15px;
     line-height: 220px;
@@ -37,9 +52,7 @@ body {
     font-size: 35px;
     font-style: sans-serif, "ＭＳ Ｐゴシック"　,self;
     // text-decoration: none;
-
-  }
-
+    }
   }
 
   a.button-flat-highlight{
