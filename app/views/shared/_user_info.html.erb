@@ -1,8 +1,8 @@
 <a href="<%= user_path(current_user) %>">
-  <%= gravatar_for current_user, size: 52 %>
+  <%= image_tag current_user.image.thumb.url ,style: "float:left"%>
 </a>
 <h1>
-  <%= current_user.name %>
+  <%= link_to current_user.name, current_user %>
 </h1>
 <span>
   <%= link_to "プロフィールを見る", current_user %>
