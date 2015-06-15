@@ -17,12 +17,17 @@ html {
 }
 
 body {
+  // background:image-url("sora.jpeg");
   padding-top: 60px;
   background-color: #ffffff
+  
 }
 .hero-unit{
-background-color: white;
-padding: 0;
+  background:image-url("haikei.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  padding: 0;
   .button-circle{
     margin: 0 15px;
     line-height: 220px;
