@@ -20,10 +20,6 @@ class StaticPagesController < ApplicationController
     @title = "◯◯"
   end
 
-  # def index
-  #   @title = "◯◯"
-  # end
-
   def marumaru
     @title = "◯◯"
   end
